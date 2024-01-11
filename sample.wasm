@@ -1,0 +1,7 @@
+(module
+  (func $i (import "imports" "imported_func") (param i32))
+  (func (export "sample")
+    i32.const 2189
+    call $i
+  )
+)
